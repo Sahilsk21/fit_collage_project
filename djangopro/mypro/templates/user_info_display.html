@@ -1,0 +1,19 @@
+<!-- myapp/templates/myapp/user_info_display.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Info Display</title>
+</head>
+<body>
+    <h1>User Information</h1>
+    <ul>
+        {% for info in user_info %}
+            <li>
+                <p><strong>Name:</strong> {{ info.name }}</p>
+                <p><strong>Address:</strong> {{ info.address }}</p>
+                <p><strong>Mobile Number:</strong> {{ info.mobile_number }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
